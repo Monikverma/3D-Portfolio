@@ -1,0 +1,212 @@
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 10%;
+  background-color: #000000;
+}
+
+/* Adjust spline section */
+.spline {
+  height: 90%;
+  width: 120%;
+  margin-top: -100px;
+}
+
+.profile-info {
+  width: 40%;
+  color: #ffffff;
+  text-align: left;
+}
+
+.profile-name {
+  font-size: 50px;
+  font-weight: 900;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -10px;
+  transition: all 3s ease;
+}
+
+.profile-name:hover {
+  color: #00ffdd;
+}
+
+.profile-role {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: -40px;
+  font-size: 1.7rem;
+  color: #00ffdd;
+}
+
+.profile-bio {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  transition: all 5s ease;
+}
+
+.profile-bio:hover {
+  color: #00ffdd;
+}
+
+.profile-logo {
+  display: flex;
+  margin-top: -999px;
+  width: 200px;
+  margin-bottom: 20px;
+  background-color: #000000;
+  border-radius: 5%;
+  opacity: 1;
+  z-index: -1;
+}
+
+.edu {
+  margin-left: 210%;
+  margin-top: -720px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.educ {
+  display: flex;
+  width: 70%;
+  margin-left: 210%;
+  margin-top: -30px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  transition: all 5s ease;
+  font-size: 1.5rem;
+}
+
+.educ:hover {
+  color: #00ffdd;
+}
+
+.education {
+  margin-left: 210%;
+  width: 50%;
+  margin-top: -10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.7rem;
+  color: #00ffdd;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .profile-container {
+    flex-direction: column;
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  .spline {
+    width: 100%;
+    margin-top: 10;
+  }
+
+  .profile-info {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .profile-name {
+    font-size: 30px;
+  }
+
+  .profile-role {
+    font-size: 1.5rem;
+  }
+
+  .profile-bio {
+    font-size: 1.2rem;
+  }
+
+  .edu, .educ, .education {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .edu {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+
+  .educ {
+    font-size: 1.2rem;
+  }
+
+  .education {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 0 3%;
+  }
+
+  .spline {
+    width: 100%;
+    height: 80%;
+  }
+
+  .profile-info {
+    margin-top: 10px;
+  }
+
+  .profile-name {
+    font-size: 35px;
+  }
+
+  .profile-role {
+    font-size: 1.2rem;
+  }
+
+  .profile-bio {
+    font-size: 1rem;
+  }
+
+  .edu {
+    font-size: 2rem;
+  }
+
+  .educ {
+    font-size: 1rem;
+  }
+
+  .education {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-container {
+    padding: 0 2%;
+  }
+
+  .profile-name {
+    font-size: 30px;
+  }
+
+  .profile-role {
+    font-size: 1rem;
+  }
+
+  .profile-bio {
+    font-size: 0.9rem;
+  }
+
+  .edu {
+    font-size: 1.5rem;
+  }
+
+  .educ {
+    font-size: 0.9rem;
+  }
+
+  .education {
+    font-size: 1rem;
+  }
+}

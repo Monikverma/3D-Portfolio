@@ -1,0 +1,74 @@
+body{
+    background-color: #000000;
+}
+
+.project-section {
+    padding: 20px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+  
+  .project-title {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 300px;
+    gap: 100px;
+     /* Space between boxes */
+  }
+  
+  .project-box {
+    background-color: #222;
+    border-radius: 10px;
+    margin-top: -250px;
+    padding: 25px;
+    height: 800px;
+    width: 500px; /* Adjust as needed */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+  }
+  
+  .project-box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .project-name {
+    font-size: 3.5rem;
+    margin: 30px 0;
+  }
+  
+  .project-description {
+    font-size: 2rem;
+    border: 3px solid black;
+    margin: 60px 10px;
+    margin-bottom: 15px;
+  }
+  
+  .view-project-button {
+    background-color: #00aaff;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin: 60px 0;
+    padding: 20px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-project-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

@@ -1,0 +1,258 @@
+/* Container for the overall service section */
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #000000, #000000); /* Gradient background for depth */
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+/* Spline Viewer Styling */
+.spline-viewer-container {
+    width: 100%;
+    max-width: 1300px; /* Limit width for larger screens */
+    height: 600px; /* Set height for the 3D viewer */
+    margin-bottom: 40px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.spline-viewer-container:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8); /* Deeper shadow on hover */
+}
+
+/* Card Styling for Freelancer Info */
+.service-card {
+    display: flex;
+    margin-top: -40px;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, #131212, #000000); 
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 97%;
+    padding: 40px;
+    backdrop-filter: blur(10px); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9); 
+}
+
+.service-card h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.service-card p {
+    display: flex;
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.service-card ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.service-card h5 {
+    font-size: 46px;
+    margin-top: 2px;
+}
+
+.service-card li {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+    padding: 10px; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+    text-align: left; 
+    max-width: 500px;
+    margin: 0 auto; 
+}
+
+.service-card li:last-child {
+    border-bottom: none;
+}
+
+/* Icon Styles */
+.i {
+    color: #00a6ff;
+    height: 100px;
+    font-size: 100px;
+    margin-top: 40px;
+    animation: rotate 3s linear infinite; /* Continuous rotation */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* End at 360 degrees */
+    }
+}
+
+.j {
+    color: #ffd000;
+    font-size: 100px;
+    margin-top: 40px;
+}
+
+.h {
+    margin-top: 50px;
+    font-size: 100px;
+    color: #fe4800;
+}
+
+.c {
+    margin-top: 40px;
+    font-size: 100px;
+    color: #003cff;
+}
+
+/* Social Media Icons */
+.insta {
+    font-size: 50px;
+    color: #e1306c;
+    margin: 20px;
+}
+
+.face {
+    font-size: 50px;
+    color: #0303c0;
+    margin: 20px;
+}
+
+.gmail {
+    margin: 20px;
+    font-size: 50px;
+    color: #f90000;
+    margin: 20px;
+}
+
+/* Heading Style */
+h1 {
+    display: flex;
+    margin-top: -150px;
+    font-style: normal;
+    font-size: 2.5rem;
+    position: relative;
+    color: #fff;
+    cursor: context-menu;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #ff5100; 
+    transition: width 0.4s ease-in-out; 
+    margin-top: 15px;
+}
+
+h1:hover::after {
+    width: 100%;
+}
+
+h1:hover {
+    color: #48ff00;
+    transition: color 0.4s ease-in-out; 
+}
+
+/* Contact Button */
+.contact-btn {
+    margin: 30px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #3fe000; /* Slightly darker on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .service-card {
+        width: 90%; /* Adjust card width for smaller screens */
+    }
+
+    .service-card h2 {
+        font-size: 2rem; /* Smaller heading for small screens */
+    }
+
+    .service-card p, .service-card li {
+        font-size: 1rem; /* Reduce paragraph and list font size */
+    }
+
+    .service-card ul {
+        flex-direction: column; /* Stack the list items vertically */
+        gap: 20px; /* Adjust gap between items */
+    }
+
+    .spline-viewer-container {
+        height: 400px; /* Adjust viewer height for smaller screens */
+    }
+
+    .i, .j, .h, .c {
+        font-size: 80px; /* Reduce icon size */
+        margin-top: 20px;
+    }
+
+    .contact-btn {
+        font-size: 1rem;
+        padding: 10px 20px; /* Smaller button on mobile */
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .service-card {
+        width: 95%; /* Slightly narrower on very small screens */
+        padding: 30px;
+    }
+
+    .spline-viewer-container {
+        height: 300px; /* Reduce 3D viewer height */
+    }
+
+    .service-card h2 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+
+    .service-card p, .service-card li {
+        font-size: 0.9rem; /* Even smaller text */
+    }
+
+    .i, .j, .h, .c {
+        font-size: 60px; /* Reduce icon size further */
+    }
+
+    .contact-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

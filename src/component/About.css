@@ -1,0 +1,52 @@
+.about-container {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    min-height: 100vh;
+    margin: 0px 350px;
+    margin-top: -150px;
+  }
+  .spline-viewer-container{
+    width: 200%;
+    background-color: #000;
+  }
+  .about-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .resume-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00ffdd;
+  }
+  
+  .resume-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .resume-button {
+    background-color: #00ffdd;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #00ccaa;
+    transform: scale(1.05);
+  }
+  
